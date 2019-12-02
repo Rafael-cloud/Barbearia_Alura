@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content= "width=device-width">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Produtos - Barbearia Alura</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="caixa">
+            <h1>
+                <img src="../imagens/logo.png" alt="Logo da barbearia Alura">
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produto.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="tela-contato">
+        <form class="formulário">
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+            <!-- Required serve para que o input seja obrigatório ao usuário -->
+            <!-- placeholder é uma sugestão para o usuário antes de digitar, que some após ele digitar algo -->
+
+            <fieldset>
+
+                <legend>Como prefere o nosso contato?</legend>
+
+                <!-- Atributo name serve para que só seja possível marcar uma opção, sem ela a página permite marcar todas, todos os names precisam ser iguais, assim eles permaneceram a um grupo. -->
+                <label><input type="radio" name="contato" value="email">Email</label>
+
+                <label><input type="radio" name="contato" value="telefone">Telefone</label>
+
+                <label> <input type="radio" name="contato" value="whatsapp" checked>Whatsapp</label>
+                <!-- checked é uma sugestão, para que aquele input tipo radio já venha marcado -->
+
+                <fieldset>
+                    <legend>Qual o horário prefere ser atendido?</legend>
+
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+                <input class="enviar" type="submit" value="Emviar">
+            </fieldset>  
+
+        </form>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horários</th>
+            </tr>
+           <tbody>
+                <tr>
+                        <td>Segunda</td>
+                        <td>08:00 às 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08:00 às 20:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08:00 às 20:00</td>
+                    </tr>
+           </tbody>
+        </thead>
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="../imagens/logo-branco.png" alt="Logo da barberia Alura">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+
+</body>
+
+</html>
